@@ -1,7 +1,24 @@
 aid: sesh
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sesh.png
 name: Sesh
-description: Sesh is a company surfaced as a portfolio company of 8vc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Sesh (Sesh Products US, Sesh+) is an Austin, Texas consumer packaged goods company
+  that manufactures and sells tobacco-free nicotine pouches. Products ship in multiple flavors
+  (Mint, Wintergreen, Clear, Mango, Cappuccino, Raspberry Lemon) and strengths (4mg, 6mg, 8mg),
+  sold direct-to-consumer via subscription and through 5,000+ retailers. Surfaced as an 8vc
+  portfolio company and added to the API Evangelist network. Enrichment found no public API,
+  developer portal, or machine-readable developer surface — this is a physical-goods brand
+  running on a Shopify storefront, so the profile carries identity and domain-security only.
 url: https://raw.githubusercontent.com/api-evangelist/sesh/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Consumer Packaged Goods
+- Nicotine Pouches
+- Ecommerce
+- Direct to Consumer
+- Retail
+- Subscription
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sesh-domain-security.yml
 - type: Website
   url: https://seshproducts.com
+- type: Blog
+  url: https://seshproducts.com/blogs/posts
+- type: Support
+  url: https://seshproducts.com/pages/contact-us
+- type: TermsOfService
+  url: https://seshproducts.com/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://seshproducts.com/policies/privacy-policy
+- type: SignUp
+  url: https://seshproducts.com/customer_authentication/login
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
